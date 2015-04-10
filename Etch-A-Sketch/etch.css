@@ -1,0 +1,15 @@
+.container {
+    background:pink;
+    width:1200px;
+    height:auto;
+}
+
+.pixel {
+    background:grey;
+    display:inline-block;
+    margin:1px;
+}
+
+.hover {
+    background:lightgrey;
+}
