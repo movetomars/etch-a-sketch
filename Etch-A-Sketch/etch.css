@@ -8,12 +8,18 @@
     float:right;
     margin: 50px;
 }
+.reset input {
+    display:block;
+    margin: 20px;
+}
 .reset button {
     width: 100px;
     height: 40px;
     background: pink;
     border: 1px solid gray;
     font: 14px Arial;
+    display: block;
+    margin: 20px;
 }
 .pixel {
     background:grey;
@@ -23,5 +29,4 @@
 
 #hover {
     background: lightgray;
-    -webkit-transition: background 0.05s;
 }
