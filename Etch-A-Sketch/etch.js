@@ -20,8 +20,23 @@ $(document).ready(function() {
 
     var hover = function() {
 
-        $(".pixel").mouseenter()
+        $(".pixel").mouseenter(function() {
+            $(this).attr("id", "hover");
+        }).mouseleave(function() {
+            $(this).removeAttr("id", "hover");
+        });
 
     }
+
+    hover();
+
+    var reset = function() {
+        $("button").click(function() {
+            var ask = prompt("How many squares would you like alongside your grid? Enter a number 2 to 100.");
+        });
+
+    }
+
+    reset();
 
 });

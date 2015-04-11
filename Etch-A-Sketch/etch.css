@@ -1,15 +1,27 @@
 .container {
     background:pink;
-    width:1200px;
+    width:960px;
     height:auto;
+    float:left;
 }
-
+.reset {
+    float:right;
+    margin: 50px;
+}
+.reset button {
+    width: 100px;
+    height: 40px;
+    background: pink;
+    border: 1px solid gray;
+    font: 14px Arial;
+}
 .pixel {
     background:grey;
     display:inline-block;
     margin:1px;
 }
 
-.hover {
-    background:lightgrey;
+#hover {
+    background: lightgray;
+    -webkit-transition: background 0.05s;
 }
