@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Your Very Own Etch-A-Sketch, 1984-style</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="etch.js"></script>
+    <link rel="stylesheet" type="text/css" href="etch.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Draw!</h1>
+    </div>
+    <div class="reset">
+        <p>Enter a number between 2 and 100 below, then press "Reset!"</p>
+        <input type="text" id="grid" data-original-value="50">
+        <button class="reset-btn">Reset!</button>
+        <script>
+
+            $(document).on("click", ".reset-btn", function(){
+                var reset_grid = $("input#grid");
+                reset_grid.val(reset_grid.data("original-value"));
+                var hover_remove = function() {
+                    $(".pixel").removeattr("id", "hover");
+                }; hover_remove();
+            });
+
+        </script>
+    </div>
+    <div class="container">
+
+    </div>
+</body>
+</html>

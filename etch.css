@@ -1,8 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     background:pink;
     width:960px;
     height:auto;
     float:left;
+    line-height:8px;
+    margin: 40px;
+    padding: 6px;
 }
 .reset {
     float:right;
@@ -22,11 +30,20 @@
     margin: 20px;
 }
 .pixel {
-    background:grey;
-    display:inline-block;
-    margin:1px;
+    background:lightgrey;
+    display:inline-flex;
+    margin:0 !important;
 }
 
 #hover {
-    background: lightgray;
+    background: gray;
+}
+
+.title h1 {
+    color:pink;
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+    font-family: Arial;
+    display:inline-block;
 }
